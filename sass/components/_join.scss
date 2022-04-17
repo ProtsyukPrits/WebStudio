@@ -1,0 +1,44 @@
+/** @format */
+
+.join {
+  margin-left: 70px;
+  margin-right: 93px;
+
+  &__title {
+    padding-top: 12px;
+    margin-bottom: 20px;
+
+    font-family: $primery-font-family;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.join__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  color: $white;
+  background: rgba(255, 255, 255, 0.1);
+  transition: background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $blue-light;
+    transition: background-color $animation;
+  }
+}

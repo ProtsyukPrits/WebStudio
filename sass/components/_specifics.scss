@@ -1,0 +1,44 @@
+/** @format */
+
+.specifics {
+  display: flex;
+
+  &__list {
+    width: 270px;
+  }
+  &__title {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $black-medium;
+  }
+
+  &__text {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $grey;
+  }
+
+  &__item {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: $white-hard;
+    border-radius: 4px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

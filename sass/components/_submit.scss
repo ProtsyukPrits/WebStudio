@@ -1,0 +1,29 @@
+/** @format */
+
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
+.submit__button {
+  transition: background-color $animation;
+  width: 200px;
+  height: 50px;
+
+  color: $white;
+  background: $blue-light;
+  box-shadow: 0px 4px 4px $shadow;
+  border: none;
+  border-radius: 4px;
+
+  font-family: $primery-font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $blue-medium;
+    transition: background-color $animation;
+  }
+}

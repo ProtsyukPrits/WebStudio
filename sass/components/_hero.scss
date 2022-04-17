@@ -1,0 +1,53 @@
+/** @format */
+
+.hero {
+  margin: 0 auto;
+  max-width: 1600px;
+  background: $grey-light;
+  background-image: linear-gradient(
+      to right,
+      $background-image,
+      $background-image
+    ),
+    url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &__item {
+    text-align: center;
+    padding: 200px 0px;
+  }
+
+  &__title {
+    margin: auto;
+    width: 696px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $white;
+  }
+
+  &__button {
+    padding: 10px 32px;
+    margin-top: 30px;
+
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 16px;
+    line-height: 1.87;
+
+    color: $white;
+    background: $blue-light;
+    box-shadow: 0px 4px 4px $shadow;
+    border-radius: 4px;
+    border: 0;
+
+    cursor: pointer;
+  }
+}

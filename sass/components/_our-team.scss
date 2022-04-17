@@ -1,0 +1,52 @@
+/** @format */
+
+.our-team {
+  background: $white-hard;
+
+  &__title {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+    color: $black-medium;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__list {
+    text-align: center;
+  }
+
+  &__description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background: $white;
+
+    box-shadow: 0px 1px 3px $shadow1, 0px 1px 1px $shadow2, 0px 2px 1px $shadow3;
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  &__name {
+    font-style: normal;
+    font-weight: $medium;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+
+    color: $black-medium;
+  }
+
+  &__text {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+
+    color: $grey;
+  }
+}

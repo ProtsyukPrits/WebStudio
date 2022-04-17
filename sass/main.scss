@@ -1,0 +1,39 @@
+/** @format */
+
+// Порядок файлів у scss===>>>
+// Utils
+// Base
+// Components
+// layout
+// Pages
+// Themes
+// Vendors
+
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/root";
+
+@import "base/normalize";
+
+@import "components/container";
+@import "components/section";
+
+@import "components/page-header";
+@import "components/logo";
+@import "components/nav";
+@import "components/contacts";
+@import "components/hero";
+@import "components/specifics";
+@import "components/our-work";
+@import "components/our-team";
+@import "components/social";
+@import "components/regular-customers";
+@import "components/page-footer";
+@import "components/join";
+@import "components/send";
+@import "components/backdrop";
+@import "components/form";
+@import "components/ckeck-box";
+@import "components/submit";
+@import "components/anchors";
+@import "components/portfolio";

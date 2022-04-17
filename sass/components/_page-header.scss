@@ -1,0 +1,12 @@
+/** @format */
+
+.page-header {
+  border-bottom: 1px solid $white-light;
+
+  &__item {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+  }
+}

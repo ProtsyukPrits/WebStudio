@@ -1,0 +1,43 @@
+/** @format */
+
+.nav {
+  margin-left: 93px;
+
+  &__item {
+    display: flex;
+  }
+
+  &__list {
+    position: relative;
+  }
+}
+
+.nav__link {
+  display: block;
+  padding: 32px 0;
+  font-style: normal;
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: $black-medium;
+  transition: color $animation;
+
+  &--underscore::after {
+    content: " ";
+    position: absolute;
+    top: 96%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: $blue-light;
+    border-radius: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $blue-light;
+    transition: color $animation;
+  }
+}

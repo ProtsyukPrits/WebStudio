@@ -1,0 +1,31 @@
+/** @format */
+
+.social {
+  margin-top: 16px;
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: $white;
+  color: $grey-medium;
+
+  transition: color $animation, background-color $animation;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $blue-light;
+    transition: color $animation, background-color $animation;
+  }
+}

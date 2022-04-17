@@ -1,0 +1,58 @@
+/** @format */
+
+body {
+  font-family: $primery-font-family, $secondary-font-family, sans-serif;
+  color: $black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.outline {
+  outline: none;
+}
+
+.padding {
+  padding: 0;
+}
+
+.margin {
+  margin: 0;
+}
+.specifics__text,
+.our-team__text {
+  margin-top: 10px;
+}
+
+.nav__list:not(:last-child),
+.contacts__list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.our-work__title,
+.our-team__title,
+.regular-customers__title {
+  margin-bottom: 50px;
+}
+
+.our-work__list:not(:last-child),
+.our-team__list:not(:last-child),
+.specifics__list:not(:last-child),
+.regular-customers__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team__link:not(:last-child),
+.join__link:not(:last-child) {
+  margin-right: 10px;
+}

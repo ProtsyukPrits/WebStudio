@@ -1,0 +1,32 @@
+/** @format */
+
+.logo {
+  &__link {
+    font-family: $secondary-font-family;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: $black;
+  }
+
+  &--color-blue {
+    color: $blue-light;
+  }
+
+  &__text--blue {
+    color: $blue-light;
+  }
+}
+
+.page-footer__logo {
+  font-family: $secondary-font-family;
+  font-style: normal;
+  font-weight: $bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  color: $white;
+}

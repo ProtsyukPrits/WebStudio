@@ -1,0 +1,74 @@
+/** @format */
+
+// ---------COLORS----------------
+
+$white: #fff;
+$white-light: #ececec;
+$white-medium: #eeeeee;
+$white-hard: #f5f4fa;
+
+$black: #000;
+$black-medium: #212121;
+$black-light: #2f303a;
+
+$blue-light: #2196f3;
+$blue-medium: #188ce8;
+
+$grey: #757575;
+$grey-light: #c4c4c4;
+$grey-medium: #afb1b8;
+
+$bg1: rgba(47, 48, 58, 0.4);
+$bg2: rgba(0, 0, 0, 0.15);
+$bg3: rgba(47, 48, 58, 0.8);
+$bg4: rgba(255, 255, 255, 0.6);
+$bg5: rgba(255, 255, 255, 0.1);
+$bg6: rgba(255, 255, 255, 0.3);
+$bg7: rgba(0, 0, 0, 0.06);
+$bg8: rgba(0, 0, 0, 0.12);
+$bg9: rgba(0, 0, 0, 0.14);
+$bg10: rgba(0, 0, 0, 0.2);
+$bg11: rgba(0, 0, 0, 0.1);
+$bg12: rgba(0, 0, 0, 0.08);
+$bg13: rgba(0, 0, 0, 0.16);
+$bg14: rgba(33, 150, 243, 0.9);
+$bg15: rgba(33, 33, 33, 0.2);
+$bg16: rgba(117, 117, 117, 0.5);
+
+$animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// --------------Where i use this colors---------------
+$background-image: $bg1;
+
+$shadow: $bg2;
+$shadow1: $bg8;
+$shadow2: $bg9;
+$shadow3: $bg10;
+$shadow4: $bg11;
+$shadow5: $bg12;
+$shadow6: $bg7;
+$shadow7: $bg13;
+
+$color: $bg4;
+$color: $bg16;
+
+$background: $bg3;
+$background1: $bg5;
+$background2: $bg14;
+$background3: $bg10;
+
+$border: $bg6;
+$border1: $bg11;
+$border2: $bg15;
+
+$filter: $bg2;
+
+// -----------------FONTS---------------------
+// -----font-family------
+$primery-font-family: "Roboto";
+$secondary-font-family: "Railway";
+
+// -----font-weight-----
+$normal: 400;
+$medium: 500;
+$bold: 700;
+$heavy: 900;

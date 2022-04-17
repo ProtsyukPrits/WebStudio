@@ -1,0 +1,61 @@
+/** @format */
+
+.check-box {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  &__label {
+    position: relative;
+
+    width: 425px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 24px;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $grey;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $black-medium;
+    border-radius: 2px;
+  }
+
+  &__link {
+    color: $blue-light;
+  }
+}
+
+.check-box__input {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+
+  &:checked + .check-box__icon {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    border: none;
+    background-color: $blue-light;
+    background-origin: border-box;
+    border-color: transparent;
+    border-radius: 2px;
+  }
+}

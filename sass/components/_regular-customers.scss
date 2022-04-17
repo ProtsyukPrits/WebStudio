@@ -1,0 +1,44 @@
+/** @format */
+
+.regular-customers {
+  &__title {
+    font-family: $primery-font-family;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $black-medium;
+  }
+
+  &__item {
+    display: flex;
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.regular-customers__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+
+  color: $grey-medium;
+  border: solid 1px $grey-medium;
+  border-radius: 4px;
+
+  transition: color $animation, border $animation;
+
+  &:hover,
+  &:focus {
+    color: $blue-light;
+    border: solid 1px $blue-light;
+    transition: color $animation, border $animation;
+  }
+}

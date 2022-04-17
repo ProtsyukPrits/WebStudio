@@ -1,0 +1,43 @@
+/** @format */
+
+.our-work {
+  padding-bottom: 94px;
+
+  &__title {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    text-align: center;
+    color: $black-medium;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__images {
+    position: relative;
+  }
+
+  &__text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 27px 0;
+
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: $white;
+    background: $background;
+  }
+}

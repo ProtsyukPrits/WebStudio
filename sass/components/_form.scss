@@ -1,0 +1,86 @@
+/** @format */
+
+.form {
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item--position {
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__label {
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $grey;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin-top: 4px;
+
+  transition: border $animation;
+  border: 1px solid $border2;
+  border-radius: 4px;
+
+  &:focus + .form__icon {
+    color: $blue-light;
+    transition: color $animation;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $blue-light;
+    transition: border $animation;
+  }
+}
+
+.form__input + .form__icon {
+  color: $black-medium;
+  transition: color $animation;
+}
+
+.form__textarea {
+  width: 100%;
+  height: 120px;
+  margin-top: 4px;
+  padding: 12px 16px;
+
+  transition: border $animation;
+  resize: none;
+  border: 1px solid $border2;
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  &:focus {
+    outline: none;
+    border: 1px solid $blue-light;
+    transition: border $animation;
+  }
+
+  &::placeholder {
+    color: $color;
+  }
+}

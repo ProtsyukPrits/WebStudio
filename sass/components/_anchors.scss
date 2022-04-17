@@ -1,0 +1,38 @@
+/** @format */
+.anchors {
+  display: flex;
+  justify-content: center;
+
+  &__list:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.anchors__button {
+  padding: 6px 22px;
+
+  font-family: $primery-font-family;
+  font-style: normal;
+  font-weight: $medium;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  color: $black-medium;
+  border: none;
+  border-radius: 4px;
+
+  transition: color $animation, background-color $animation;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $blue-light;
+    transition: color $animation, background-color $animation;
+
+    box-shadow: 0px 3px 1px $shadow4, 0px 1px 2px $shadow5, 0px 2px 2px $shadow1;
+    border-radius: 4px;
+
+    cursor: pointer;
+  }
+}
