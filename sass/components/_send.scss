@@ -1,7 +1,8 @@
 /** @format */
 
 .send {
-  width: 570px;
+  width: 450px;
+  position: relative;
 
   &__title {
     padding-top: 12px;
@@ -16,16 +17,10 @@
     color: $white;
   }
 
-  &__item {
-    position: relative;
-    display: flex;
-  }
-
   &__button {
     width: 200px;
     height: 50px;
     padding: 10px 62px 10px 29px;
-    margin-left: 12px;
 
     font-family: $primery-font-family;
     font-style: normal;
@@ -46,18 +41,26 @@
 
   &__icon {
     position: absolute;
-    top: 50%;
-    right: 28px;
     transform: translateY(-50%);
-
     color: $white;
 
     fill: currentColor;
   }
+
+  @media screen and (max-width: 450px) {
+    text-align: center;
+    &__icon {
+      bottom: 0;
+      right: 34%;
+    }
+    .send__input {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .send__input {
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
 
@@ -70,5 +73,37 @@
     color: $white;
     outline: none;
     border: 1px solid $border;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .send {
+    width: 768px;
+    text-align: center;
+    margin-top: 60px;
+    &__input {
+      width: 450px;
+      margin-bottom: 20px;
+    }
+    &__icon {
+      bottom: 0;
+      right: 38%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .send {
+    width: 570px;
+    &__item {
+      display: flex;
+    }
+    &__button {
+      margin-left: 12px;
+    }
+    &__icon {
+      bottom: 32%;
+      right: 5%;
+    }
   }
 }

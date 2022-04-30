@@ -3,6 +3,7 @@
 .page-footer {
   background: $black-light;
   padding: 60px 0;
+  width: 480px;
 
   &__address {
     margin-top: 20px;
@@ -30,8 +31,31 @@
 
     color: $color;
   }
+  @media screen and (max-width: 1199px) {
+    &__content {
+      text-align: center;
+    }
+  }
+}
 
-  &__item {
-    display: flex;
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .page-footer {
+    width: 768px;
+    &__item {
+      padding-left: 76px;
+      padding-right: 89px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer {
+    margin: 0 auto;
+    width: 1600px;
+    &__item {
+      display: flex;
+    }
   }
 }

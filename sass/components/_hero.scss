@@ -2,7 +2,7 @@
 
 .hero {
   margin: 0 auto;
-  max-width: 1600px;
+  width: 480px;
   background: $grey-light;
   background-image: linear-gradient(
       to right,
@@ -15,18 +15,16 @@
 
   &__item {
     text-align: center;
-    padding: 200px 0px;
+    padding: 118px 0px;
   }
 
   &__title {
     margin: auto;
-    width: 696px;
 
-    font-family: Roboto;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -34,6 +32,7 @@
   }
 
   &__button {
+    width: 200px;
     padding: 10px 32px;
     margin-top: 30px;
 
@@ -49,5 +48,32 @@
     border: 0;
 
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .hero {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    background: $grey-light;
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 }

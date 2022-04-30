@@ -1,10 +1,8 @@
 /** @format */
 
 .specifics {
-  display: flex;
-
   &__list {
-    width: 270px;
+    width: 450px;
   }
   &__title {
     font-style: normal;
@@ -13,6 +11,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+    text-align: center;
     color: $black-medium;
   }
 
@@ -21,12 +20,11 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     color: $grey;
   }
 
   &__item {
-    width: 270px;
+    width: 450px;
     height: 120px;
     margin-bottom: 30px;
 
@@ -40,5 +38,52 @@
 
   &__icon {
     fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .specifics {
+    width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+    &__list {
+      width: 354px;
+    }
+
+    &__title {
+      text-align: start;
+    }
+
+    &__item {
+      width: 354px;
+    }
+  }
+  .specifics__list:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .specifics__list:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .specifics {
+    display: flex;
+
+    &__list {
+      width: 270px;
+    }
+
+    &__title {
+      text-align: start;
+    }
+
+    &__item {
+      width: 270px;
+    }
+
+    &__list:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }

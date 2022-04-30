@@ -1,11 +1,7 @@
 /** @format */
 
 .join {
-  margin-left: 70px;
-  margin-right: 93px;
-
   &__title {
-    padding-top: 12px;
     margin-bottom: 20px;
 
     font-family: $primery-font-family;
@@ -21,24 +17,54 @@
   &__icon {
     fill: currentColor;
   }
+
+  @media screen and (max-width: 450px) {
+    &__title {
+      text-align: center;
+      padding-top: 60px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    color: $white;
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color $animation;
+
+    &:hover,
+    &:focus {
+      background-color: $blue-light;
+      transition: background-color $animation;
+    }
+  }
 }
 
-.join__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .join {
+    margin-left: auto;
+    &__title {
+      text-align: center;
+    }
+  }
+}
 
-  width: 44px;
-  height: 44px;
-
-  border-radius: 50%;
-  color: $white;
-  background: rgba(255, 255, 255, 0.1);
-  transition: background-color $animation;
-
-  &:hover,
-  &:focus {
-    background-color: $blue-light;
-    transition: background-color $animation;
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 70px;
+    margin-right: 93px;
+    &__title {
+      padding-top: 12px;
+    }
   }
 }

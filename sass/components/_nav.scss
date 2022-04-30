@@ -20,9 +20,6 @@
   color: $black-medium;
   transition: color $animation;
 
-  @media screen and (min-width: 451px) {
-  }
-
   &:hover,
   &:focus {
     color: $blue-light;
@@ -30,7 +27,13 @@
   }
 }
 
-@media screen and (min-width: 451px) {
+@media screen and (max-width: 450px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 450px) {
   .nav {
     margin-left: 88px;
 

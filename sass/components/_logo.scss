@@ -18,6 +18,10 @@
   &__text--blue {
     color: $blue-light;
   }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .page-footer__logo {

@@ -1,0 +1,26 @@
+/** @format */
+
+.mobile-social {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.mobile-social__link {
+  font-style: normal;
+  font-weight: $medium;
+  font-size: 18px;
+  line-height: 1.22;
+
+  letter-spacing: 0.02em;
+
+  color: $blue-light;
+}
+
+.mobile-social__list:not(:first-child) {
+  border-left: 1px solid $border2;
+  padding-left: 10px;
+}
+
+.mobile-social__list:not(:last-child) {
+  padding-right: 10px;
+}

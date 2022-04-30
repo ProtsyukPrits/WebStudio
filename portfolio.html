@@ -24,22 +24,29 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <page-header class="page-header" >
+    <header class="page-header">
       <div class="page-header__item container">
         <!-- logo -->
-        <a href="index.html" class="logo__link link"
-          ><span class="logo logo--color-blue">Web</span
-          ><span>Studio</span></a
-        >
+        <div>
+          <a href="index.html" class="logo__link link"
+            ><span class="logo logo--color-blue">Web</span
+            ><span>Studio</span></a
+          >
+        </div>
 
-        <!-- nav -->
         <nav class="nav">
-          <ul class="nav__item list list margin padding">
+          <ul class="nav__item list margin padding">
             <li class="nav__list">
-              <a href="index.html" class="nav__link link outline">Студия</a>
+              <a
+                href="index.html"
+                class="nav__link nav__link--underscore link outline"
+                >Студия</a
+              >
             </li>
             <li class="nav__list">
-              <a href="portfolio.html" class="nav__link nav__link--underscore link outline">Портфолио</a>
+              <a href="portfolio.html" class="nav__link link outline"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__list">
               <a href="index.html" class="nav__link link outline">Контакты</a>
@@ -47,10 +54,12 @@
           </ul>
         </nav>
 
-        <!-- contacts -->
         <ul class="contacts list margin padding">
           <li class="contacts__list">
-            <a href="mailto:info@devstudio.com" class="contacts__link link outline">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts__link contacts__link--font link outline"
+            >
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#mail"></use>
               </svg>
@@ -66,8 +75,95 @@
             >
           </li>
         </ul>
+
+        <!-- ---------======MOBILE=====---------------- -->
+        <button type="button" class="mobile__button" data-menu-open>
+          <svg class="mobile__icon" width="24" height="16">
+            <use class="mobile__icon" href="./images/icons.svg#burger"></use>
+          </svg>
+        </button>
+
+        <div class="mobile is-hidden" data-menu>
+          <button
+            type="button"
+            class="mobile__button mobile__button--close padding"
+            data-menu-close
+          >
+            <svg class="mobile__icon" width="24" height="16">
+              <use href="./images/icons.svg#mark"></use>
+            </svg>
+          </button>
+
+          <nav class="nav-mobile">
+            <ul class="nav-mobile__item list margin padding">
+              <li class="nav-mobile__list">
+                <a href="index.html" class="nav-mobile__link link outline"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav-mobile__list">
+                <a href="portfolio.html" class="nav-mobile__link link outline"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav-mobile__list">
+                <a href="index.html" class="nav-mobile__link link outline"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts-mobile list margin padding">
+            <li class="contacts-mobile__list">
+              <a
+                href="tel:+380961111111"
+                class="contacts-mobile__link link outline"
+              >
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="contacts-mobile__list">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-mobile__link contacts-mobile__link--font link outline"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mobile-social list margin padding">
+            <li class="mobile-social__list">
+              <a
+                class="mobile-social__link link"
+                href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-social__list">
+              <a class="mobile-social__link link" href="https://twitter.com/"
+                >Twitter</a
+              >
+            </li>
+            <li class="mobile-social__list">
+              <a
+                class="mobile-social__link link"
+                href="https://www.facebook.com/"
+                >Facebook</a
+              >
+            </li>
+            <li class="mobile-social__list">
+              <a
+                class="mobile-social__link link"
+                href="https://www.linkedin.com/"
+                >Linkedin</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-    </page-header>
+    </header>
 
     <main>
       <section class="section">
@@ -231,30 +327,40 @@
             </ul>
           </address>
         </div>
-        <div class="join">
+         <div class="join">
           <h3 class="join__title margin">присоединяйтесь</h3>
 
           <div>
-            <a class="join__link outline" href="https://www.instagram.com/">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </a>
-            <a class="join__link outline" href="https://twitter.com/">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </a>
-            <a class="join__link outline" href="https://www.facebook.com/">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </a>
-            <a class="join__link outline" href="https://www.linkedin.com/">
-              <svg class="join__icon" width="20" height="20">
-                <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </a>
+            <ul class="join__item list padding">
+              <li class="join__list">
+                <a class="join__link outline" href="https://www.instagram.com/">
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__list">
+                <a class="join__link outline" href="https://www.facebook.com/">
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__list">
+                <a class="join__link outline" href="https://www.instagram.com/">
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join__list">
+                <a class="join__link outline" href="https://www.linkedin.com/">
+                  <svg class="join__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -275,5 +381,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

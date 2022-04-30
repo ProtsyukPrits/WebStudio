@@ -44,14 +44,12 @@ img {
   margin-bottom: 50px;
 }
 
-.our-work__list:not(:last-child),
-.our-team__list:not(:last-child),
-.specifics__list:not(:last-child),
-.regular-customers__list:not(:last-child) {
+.our-work__list:not(:last-child) {
   margin-right: 30px;
 }
 
 .our-team__link:not(:last-child),
-.join__link:not(:last-child) {
+.join__list:not(:last-child),
+.social__list:not(:last-child) {
   margin-right: 10px;
 }

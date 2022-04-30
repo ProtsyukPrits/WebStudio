@@ -13,10 +13,6 @@
     color: $black-medium;
   }
 
-  &__item {
-    display: flex;
-  }
-
   &__list {
     text-align: center;
   }
@@ -48,5 +44,46 @@
     letter-spacing: 0.03em;
 
     color: $grey;
+  }
+
+  @media screen and (max-width: 450px) {
+    &__list:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .our-team {
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__list:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+    &__list:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &__list {
+      width: 354px;
+    }
+    &__description {
+      width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-team {
+    &__item {
+      display: flex;
+    }
+
+    &__list:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }

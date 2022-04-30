@@ -1,0 +1,30 @@
+/** @format */
+
+.nav-mobile {
+  display: block;
+
+  &__list {
+    position: relative;
+  }
+}
+
+.nav-mobile__link {
+  display: block;
+  font-style: normal;
+  font-weight: $medium;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: $black-medium;
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $blue-light;
+  }
+}
+
+.nav-mobile__list:not(:last-child) {
+  margin-bottom: 32px;
+}
