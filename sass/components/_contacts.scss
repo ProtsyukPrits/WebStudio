@@ -1,9 +1,6 @@
 /** @format */
 
 .contacts {
-  display: flex;
-  margin-left: auto;
-
   &__icon {
     margin-right: 10px;
     fill: currentColor;
@@ -11,13 +8,13 @@
 }
 
 .contacts__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
 
   font-style: normal;
   font-weight: $medium;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 34px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: $grey;
@@ -27,5 +24,34 @@
   &:focus {
     color: $blue-light;
     transition: color $animation;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .contacts__link--font {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 1199px) {
+  .contacts__list:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .contacts {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  .contacts__list:not(:last-child) {
+    margin-right: 50px;
   }
 }

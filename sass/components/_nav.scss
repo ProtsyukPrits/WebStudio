@@ -1,11 +1,7 @@
 /** @format */
 
 .nav {
-  margin-left: 93px;
-
-  &__item {
-    display: flex;
-  }
+  display: block;
 
   &__list {
     position: relative;
@@ -17,27 +13,49 @@
   padding: 32px 0;
   font-style: normal;
   font-weight: $medium;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 40px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 
   color: $black-medium;
   transition: color $animation;
 
-  &--underscore::after {
-    content: " ";
-    position: absolute;
-    top: 96%;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: $blue-light;
-    border-radius: 2px;
+  @media screen and (min-width: 451px) {
   }
 
   &:hover,
   &:focus {
     color: $blue-light;
     transition: color $animation;
+  }
+}
+
+@media screen and (min-width: 451px) {
+  .nav {
+    margin-left: 88px;
+
+    &__link {
+      font-size: 16px;
+      line-height: 1.14;
+    }
+    &__item {
+      display: flex;
+    }
+
+    &--underscore::after {
+      content: " ";
+      position: absolute;
+      top: 96%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: $blue-light;
+      border-radius: 2px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
   }
 }
