@@ -1,10 +1,7 @@
 /** @format */
 
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-
+  margin-top: 40px;
   &__item {
     overflow: hidden;
     position: relative;
@@ -57,6 +54,14 @@
   }
 }
 
+@media screen and (max-width: 450px) {
+  .portfolio {
+    &__list:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .portfolio__list {
   background: $white;
 
@@ -65,17 +70,47 @@
     box-shadow: 0px 1px 1px $shadow1, 0px 4px 4px $shadow6, 1px 4px 6px $shadow7;
   }
 
-  &:nth-child(3n + 2) {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  &t:nth-child(-n + 6) {
-    margin-bottom: 30px;
-  }
-
   &:hover .portfolio__hover {
     transform: translateY(-100%);
     opacity: 1;
     transition: transform $animation, opacity $animation;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .portfolio {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__list {
+      width: 354px;
+    }
+
+    &__list:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &__list:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &__description--padding {
+      padding-bottom: 56px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__list:nth-child(3n + 2) {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    &__list:nth-child(-n + 6) {
+      margin-bottom: 30px;
+    }
   }
 }

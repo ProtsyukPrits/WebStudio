@@ -45,7 +45,7 @@
       display: flex;
     }
 
-    &--underscore::after {
+    &__link--underscore::after {
       content: " ";
       position: absolute;
       top: 96%;

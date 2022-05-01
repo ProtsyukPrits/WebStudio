@@ -242,31 +242,71 @@
           <ul class="our-work__item list margin padding">
             <li class="our-work__list">
               <div class="our-work__images">
-                <img
-                  src="images/img-1.jpg"
-                  alt="Руки набирают код"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-1-1200x1.webp 1x,
+                      ./images/img-1-1200x2.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/img-1-1200x1.jpg 1x,
+                      ./images/img-1-1200x2.jpg 2x
+                    "
+                    src="./images/img-1-1200x1.jpg"
+                    alt="Руки набирают код"
+                  />
+                </picture>
                 <p class="our-work__text margin">Десктопные приложения</p>
               </div>
             </li>
             <li class="our-work__list">
               <div class="our-work__images">
-                <img
-                  src="images/img-2.jpg"
-                  alt="Держит в руке телефон и работает за ноутбуком"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-2-1200x1.webp 1x,
+                      ./images/img-2-1200x2.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/img-2-1200x1.jpg 1x,
+                      ./images/img-2-1200x2.jpg 2x
+                    "
+                    src="./images/img-2-1200x1.jpg"
+                    alt="Держит в руке телефон и работает за ноутбуком"
+                  />
+                </picture>
                 <p class="our-work__text margin">Мобильные приложения</p>
               </div>
             </li>
             <li class="our-work__list">
               <div class="our-work__images">
-                <img
-                  src="images/img-3.jpg"
-                  alt="Выберает на планшете цветовую палитру"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-3-1200x1.webp 1x,
+                      ./images/img-3-1200x2.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/img-3-1200x1.jpg 1x,
+                      ./images/img-3-1200x2.jpg 2x
+                    "
+                    src="./images/img-3-1200x1.jpg"
+                    alt="Выберает на планшете цветовую палитру"
+                  />
+                </picture>
+
                 <p class="our-work__text margin">Дизайнерские решения</p>
               </div>
             </li>
@@ -280,7 +320,48 @@
           <h2 class="our-team__title margin">Наша команда</h2>
           <ul class="our-team__item list margin padding">
             <li class="our-team__list">
-              <img src="images/igor.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor-450x1.webp 1x,
+                    ./images/igor-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/igor-768x1.webp 1x,
+                    ./images/igor-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/igor-1200x1.webp 1x,
+                    ./images/igor-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/igor-450x1.jpg 1x,
+                    ./images/igor-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/igor-768x1.jpg 1x,
+                    ./images/igor-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/igor-1200x1.jpg 1x,
+                    ./images/igor-1200x2.jpg 2x
+                  "
+                  src="./images/igor-450x1.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <div class="our-team__description">
                 <h3 class="our-team__name margin">Игорь Демьяненко</h3>
                 <p class="our-team__text margin">Product Designer</p>
@@ -331,7 +412,48 @@
               </div>
             </li>
             <li class="our-team__list">
-              <img src="images/olga.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga-450x1.webp 1x,
+                    ./images/olga-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/olga-768x1.webp 1x,
+                    ./images/olga-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/olga-1200x1.webp 1x,
+                    ./images/olga-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/olga-450x1.jpg 1x,
+                    ./images/olga-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/olga-768x1.jpg 1x,
+                    ./images/olga-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/olga-1200x1.jpg 1x,
+                    ./images/olga-1200x2.jpg 2x
+                  "
+                  src="./images/olga-450x1.jpg"
+                  alt="Ольга Репина"
+                />
+              </picture>
               <div class="our-team__description">
                 <h3 class="our-team__name margin">Ольга Репина</h3>
                 <p class="our-team__text margin">Frontend Developer</p>
@@ -382,7 +504,48 @@
               </div>
             </li>
             <li class="our-team__list">
-              <img src="images/nikolay.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/nikolay-450x1.webp 1x,
+                    ./images/nikolay-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/nikolay-768x1.webp 1x,
+                    ./images/nikolay-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/nikolay-1200x1.webp 1x,
+                    ./images/nikolay-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/nikolay-450x1.jpg 1x,
+                    ./images/nikolay-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/nikolay-768x1.jpg 1x,
+                    ./images/nikolay-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/nikolay-1200x1.jpg 1x,
+                    ./images/nikolay-1200x2.jpg 2x
+                  "
+                  src="./images/nikolay-450x1.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <div class="our-team__description">
                 <h3 class="our-team__name margin">Николай Тарасов</h3>
                 <p class="our-team__text margin">Marketing</p>
@@ -433,7 +596,48 @@
               </div>
             </li>
             <li class="our-team__list">
-              <img src="images/mikhail.jpg" alt="Михаил Ермаков" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mikhail-450x1.webp 1x,
+                    ./images/mikhail-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mikhail-768x1.webp 1x,
+                    ./images/mikhail-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/mikhail-1200x1.webp 1x,
+                    ./images/mikhail-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/mikhail-450x1.jpg 1x,
+                    ./images/mikhail-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/mikhail-768x1.jpg 1x,
+                    ./images/mikhail-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/mikhail-1200x1.jpg 1x,
+                    ./images/mikhail-1200x2.jpg 2x
+                  "
+                  src="./images/mikhail-450x1.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <div class="our-team__description">
                 <h3 class="our-team__name margin">Михаил Ермаков</h3>
                 <p class="our-team__text margin">UI Designer</p>

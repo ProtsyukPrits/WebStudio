@@ -28,7 +28,7 @@
     transition: transform $animation;
 
     padding: 40px;
-    width: 528px;
+    width: 450px;
     background: $white;
     box-shadow: 0px 1px 3px $shadow1, 0px 1px 1px $shadow2, 0px 2px 1px $shadow3;
     border-radius: 4px;
@@ -72,4 +72,16 @@
     cursor: pointer;
     transition: color $animation;
   }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .backdrop {
+    &__item {
+      width: 528px;
+      top: 70%;
+    }
+  }
+}
+
+@media screen and (min-width: 450px) {
 }

@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -13,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-      <!-- <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
       integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -37,14 +39,12 @@
         <nav class="nav">
           <ul class="nav__item list margin padding">
             <li class="nav__list">
-              <a
-                href="index.html"
-                class="nav__link nav__link--underscore link outline"
-                >Студия</a
-              >
+              <a href="index.html" class="nav__link link outline">Студия</a>
             </li>
             <li class="nav__list">
-              <a href="portfolio.html" class="nav__link link outline"
+              <a
+                href="portfolio.html"
+                class="nav__link nav__link--underscore link outline"
                 >Портфолио</a
               >
             </li>
@@ -167,53 +167,140 @@
 
     <main>
       <section class="section">
-      
-          <!-- anchors -->
-        
-           <div class="container"></div>
+        <!-- anchors -->
+
+        <div class="container">
           <ul class="anchors list margin padding">
             <li class="anchors__list">
               <button type="button" class="anchors__button outline">Все</button>
             </li>
             <li class="anchors__list">
-              <button type="button" class="anchors__button outline">Веб-сайты</button>
+              <button type="button" class="anchors__button outline">
+                Веб-сайты
+              </button>
             </li>
             <li class="anchors__list">
-              <button type="button" class="anchors__button outline">Приложения</button>
+              <button type="button" class="anchors__button outline">
+                Приложения
+              </button>
             </li>
             <li class="anchors__list">
-              <button type="button" class="anchors__button outline">Дизайн</button>
+              <button type="button" class="anchors__button outline">
+                Дизайн
+              </button>
             </li>
             <li class="anchors__list">
-              <button type="button" class="anchors__button outline">Маркетинг</button>
+              <button type="button" class="anchors__button outline">
+                Маркетинг
+              </button>
             </li>
           </ul>
-       </div>
-      
-       <!-- Portfolio -->
-      <div class="container">
-            <ul class="portfolio list margin padding">
+        </div>
+
+        <!-- Portfolio -->
+        <div class="container">
+          <ul class="portfolio list margin padding">
             <li class="portfolio__list">
               <div class="portfolio__item">
-                <img
-                src="images/portfolio-1.jpg"
-                alt="Фото-картки на ноутбуке"
-                width="370"
-              />
-              <p class="portfolio__hover margin">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
-                Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio-1-450x1.webp 1x,
+                      ./images/portfolio-1-450x2.webp 2x
+                    "
+                    media="(max-width: 450px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-1-768x1.webp 1x,
+                      ./images/portfolio-1-768x2.webp 2x
+                    "
+                    media="(min-width: 450px) and (max-width: 1199px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio-1-1200x1.webp 1x,
+                      ./images/portfolio-1-1200x2.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/portfolio-1-450x1.jpg 1x,
+                      ./images/portfolio-1-450x2.jpg 2x
+                    "
+                    srcset="
+                      ./images/portfolio-1-768x1.jpg 1x,
+                      ./images/portfolio-1-768x2.jpg 2x
+                    "
+                    srcset="
+                      ./images/iportfolio-1-1200x1.jpg 1x,
+                      ./images/iportfolio-1-1200x2.jpg 2x
+                    "
+                    src="./images/portfolio-1-450x1.jpg"
+                    alt="Фото-картки на ноутбуке"
+                  />
+                </picture>
+                <p class="portfolio__hover margin">
+                  Ресурс предлагает комплексные предложения с разным уровнем
+                  функционала и сервисов. Все это позволит посетителю получить
+                  исчерпывающие сведения о компании или частном лице.
+                </p>
               </div>
-              <div class="portfolio__description">
+              <div
+                class="portfolio__description portfolio__description--padding"
+              >
                 <h3 class="portfolio__title margin">Технокряк</h3>
                 <p class="portfolio__text margin">Веб-сайт</p>
               </div>
             </li>
             <li class="portfolio__list">
-              <img
-                src="images/portfolio-2.jpg"
-                alt="Баскетболисты с мячом"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio-2-450x1.webp 1x,
+                    ./images/portfolio-2-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-2-768x1.webp 1x,
+                    ./images/portfolio-2-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-2-1200x1.webp 1x,
+                    ./images/portfolio-2-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/portfolio-2-450x1.jpg 1x,
+                    ./images/portfolio-2-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/portfolio-2-768x1.jpg 1x,
+                    ./images/portfolio-2-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/iportfolio-2-1200x1.jpg 1x,
+                    ./images/iportfolio-2-1200x2.jpg 2x
+                  "
+                  src="./images/portfolio-2-450x1.jpg"
+                  alt="Баскетболисты с мячом"
+                />
+              </picture>
+
               <div class="portfolio__description">
                 <h3 class="portfolio__title margin">
                   Постер New Orlean vs Golden Star
@@ -222,112 +309,380 @@
               </div>
             </li>
             <li class="portfolio__list">
-              <img
-                src="images/portfolio-3.jpg"
-                alt="Логотип ресторана"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio-3-450x1.webp 1x,
+                    ./images/portfolio-3-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-3-768x1.webp 1x,
+                    ./images/portfolio-3-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-3-1200x1.webp 1x,
+                    ./images/portfolio-3-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/portfolio-3-450x1.jpg 1x,
+                    ./images/portfolio-3-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/portfolio-3-768x1.jpg 1x,
+                    ./images/portfolio-3-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/iportfolio-3-1200x1.jpg 1x,
+                    ./images/iportfolio-3-1200x2.jpg 2x
+                  "
+                  src="./images/portfolio-3-450x1.jpg"
+                  alt="Логотип ресторана"
+                />
+              </picture>
               <div class="portfolio__description">
                 <h3 class="portfolio__title margin">Ресторан Seafood</h3>
                 <p class="portfolio__text margin">Приложение</p>
               </div>
             </li>
             <li class="portfolio__list">
-              <img
-                src="images/portfolio-4.jpg"
-                alt="Безпроводные наушники"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio-4-450x1.webp 1x,
+                    ./images/portfolio-4-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-4-768x1.webp 1x,
+                    ./images/portfolio-4-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-4-1200x1.webp 1x,
+                    ./images/portfolio-4-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/portfolio-4-450x1.jpg 1x,
+                    ./images/portfolio-4-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/portfolio-4-768x1.jpg 1x,
+                    ./images/portfolio-4-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/iportfolio-4-1200x1.jpg 1x,
+                    ./images/iportfolio-4-1200x2.jpg 2x
+                  "
+                  src="./images/portfolio-4-450x1.jpg"
+                  alt="Безпроводные наушники"
+                />
+              </picture>
               <div class="portfolio__description">
                 <h3 class="portfolio__title margin">Проект Prime</h3>
                 <p class="portfolio__text margin">Маркетинг</p>
               </div>
             </li>
             <li class="portfolio__list">
-              <img
-                src="images/portfolio-5.jpg"
-                alt="Картонные коробки"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio-5-450x1.webp 1x,
+                    ./images/portfolio-5-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-5-768x1.webp 1x,
+                    ./images/portfolio-5-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-5-1200x1.webp 1x,
+                    ./images/portfolio-5-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/portfolio-5-450x1.jpg 1x,
+                    ./images/portfolio-5-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/portfolio-5-768x1.jpg 1x,
+                    ./images/portfolio-5-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/iportfolio-5-1200x1.jpg 1x,
+                    ./images/iportfolio-5-1200x2.jpg 2x
+                  "
+                  src="./images/portfolio-5-450x1.jpg"
+                  alt="Картонные коробки"
+                />
+              </picture>
               <div class="portfolio__description">
                 <h3 class="portfolio__title margin">Проект Boxes</h3>
                 <p class="portfolio__text margin">Приложение</p>
               </div>
             </li>
             <li class="portfolio__list">
-              <img
-                src="images/portfolio-6.jpg"
-                alt="Монитор компютера"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio-6-450x1.webp 1x,
+                    ./images/portfolio-6-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-6-768x1.webp 1x,
+                    ./images/portfolio-6-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-6-1200x1.webp 1x,
+                    ./images/portfolio-6-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/portfolio-6-450x1.jpg 1x,
+                    ./images/portfolio-6-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/portfolio-6-768x1.jpg 1x,
+                    ./images/portfolio-6-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/iportfolio-6-1200x1.jpg 1x,
+                    ./images/iportfolio-6-1200x2.jpg 2x
+                  "
+                  src="./images/portfolio-6-450x1.jpg"
+                  alt="Монитор компютера"
+                />
+              </picture>
               <div class="portfolio__description">
-                <h3 class="portfolio__title margin">Inspiration has no Borders</h3>
+                <h3 class="portfolio__title margin">
+                  Inspiration has no Borders
+                </h3>
                 <p class="portfolio__text margin">Веб-сайт</p>
               </div>
             </li>
             <li class="portfolio__list">
-              <img src="images/portfolio-7.jpg" alt="Книга" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio-7-450x1.webp 1x,
+                    ./images/portfolio-7-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-7-768x1.webp 1x,
+                    ./images/portfolio-7-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-7-1200x1.webp 1x,
+                    ./images/portfolio-7-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/portfolio-7-450x1.jpg 1x,
+                    ./images/portfolio-7-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/portfolio-7-768x1.jpg 1x,
+                    ./images/portfolio-7-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/iportfolio-7-1200x1.jpg 1x,
+                    ./images/iportfolio-7-1200x2.jpg 2x
+                  "
+                  src="./images/portfolio-7-450x1.jpg"
+                  alt="Книга"
+                />
+              </picture>
               <div class="portfolio__description">
                 <h3 class="portfolio__title margin">Издание Limited Edition</h3>
                 <p class="portfolio__text margin">Дизайн</p>
               </div>
             </li>
             <li class="portfolio__list">
-      
-               <img src="images/portfolio-8.jpg"
-                alt="Ярлык магазина"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio-8-450x1.webp 1x,
+                    ./images/portfolio-8-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-8-768x1.webp 1x,
+                    ./images/portfolio-8-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-8-1200x1.webp 1x,
+                    ./images/portfolio-8-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/portfolio-8-450x1.jpg 1x,
+                    ./images/portfolio-8-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/portfolio-8-768x1.jpg 1x,
+                    ./images/portfolio-8-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/iportfolio-8-1200x1.jpg 1x,
+                    ./images/iportfolio-8-1200x2.jpg 2x
+                  "
+                  src="./images/portfolio-8-450x1.jpg"
+                  alt="Ярлык магазина"
+                />
+              </picture>
               <div class="portfolio__description">
                 <h3 class="portfolio__title margin">Проект LAB</h3>
                 <p class="portfolio__text margin">Маркетинг</p>
               </div>
             </li>
             <li class="portfolio__list">
-              <img
-                src="images/portfolio-9.jpg"
-                alt="Руки роботающие по ноутбуке"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/portfolio-9-450x1.webp 1x,
+                    ./images/portfolio-9-450x2.webp 2x
+                  "
+                  media="(max-width: 450px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-9-768x1.webp 1x,
+                    ./images/portfolio-9-768x2.webp 2x
+                  "
+                  media="(min-width: 450px) and (max-width: 1199px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/portfolio-9-1200x1.webp 1x,
+                    ./images/portfolio-9-1200x2.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/portfolio-9-450x1.jpg 1x,
+                    ./images/portfolio-9-450x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/portfolio-9-768x1.jpg 1x,
+                    ./images/portfolio-9-768x2.jpg 2x
+                  "
+                  srcset="
+                    ./images/iportfolio-9-1200x1.jpg 1x,
+                    ./images/iportfolio-9-1200x2.jpg 2x
+                  "
+                  src="./images/portfolio-9-450x1.jpg"
+                  alt="Руки роботающие по ноутбуке"
+                />
+              </picture>
               <div class="portfolio__description">
                 <h3 class="portfolio__title margin">Growing Business</h3>
                 <p class="portfolio__text margin">Приложение</p>
               </div>
             </li>
           </ul>
-          </div>
-   </section>
+        </div>
+      </section>
     </main>
 
-   <footer class="page-footer">
+    <footer class="page-footer">
       <div class="page-footer__item container">
         <div>
-          <div>
+          <div class="logo">
             <a href="index.html" class="page-footer__logo link"
-              ><span class="logo logo__text--blue">Web</span
-              ><span>Studio</span></a
+              ><span class="logo__text--blue">Web</span><span>Studio</span></a
             >
           </div>
 
-          <address class="page-footer__address">
-            г. Киев, пр-т Леси Украинки, 26
-          </address>
-          <address>
-            <ul class="list margin padding">
-              <li class="page-footer__list">
-                <a href="mailto:info@example.com" class="page-footer__link link"
-                  >info@example.com</a
-                >
-              </li>
-              <li class="page-footer__list">
-                <a href="tel:+380991111111" class="page-footer__link link"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
+          <div class="page-footer__content">
+            <address class="page-footer__address">
+              г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <address>
+              <ul class="list margin padding">
+                <li class="page-footer__list">
+                  <a
+                    href="mailto:info@example.com"
+                    class="page-footer__link link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="page-footer__list">
+                  <a href="tel:+380991111111" class="page-footer__link link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
         </div>
-         <div class="join">
+        <div class="join">
           <h3 class="join__title margin">присоединяйтесь</h3>
 
           <div>

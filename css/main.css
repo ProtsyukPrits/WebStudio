@@ -442,7 +442,7 @@ summary {
   .nav__item {
     display: flex;
   }
-  .nav--underscore::after {
+  .nav__link--underscore::after {
     content: " ";
     position: absolute;
     top: 96%;
@@ -522,7 +522,8 @@ summary {
   margin: 0 auto;
   width: 480px;
   background: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-450x1.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-450x1.webp);
   background-size: cover;
   background-position: center;
 }
@@ -559,24 +560,60 @@ summary {
   cursor: pointer;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-450x2.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-450x2.webp);
+  }
+}
+
 @media screen and (min-width: 450px) {
   .hero {
     width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768x1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768x1.webp);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768x2.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768x2.webp);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     width: 1200px;
-    background: #c4c4c4;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1200x1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1200x1.webp);
   }
   .hero__title {
     width: 696px;
     font-size: 44px;
     line-height: 1.36;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1200x2.jpg);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-1200x2.webp);
   }
 }
 
@@ -660,7 +697,7 @@ summary {
 }
 
 /** @format */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1200px) {
   .our-work {
     display: none;
   }
@@ -747,12 +784,18 @@ summary {
 }
 
 @media screen and (max-width: 450px) {
+  .our-team {
+    width: 480px;
+  }
   .our-team__list:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 450px) and (max-width: 1199px) {
+  .our-team {
+    width: 768px;
+  }
   .our-team__item {
     display: flex;
     flex-wrap: wrap;
@@ -1139,7 +1182,7 @@ summary {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
-  width: 528px;
+  width: 450px;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1178,6 +1221,13 @@ summary {
   color: #2196f3;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .backdrop__item {
+    width: 528px;
+    top: 70%;
+  }
 }
 
 /** @format */
@@ -1346,13 +1396,19 @@ summary {
 }
 
 /** @format */
-.anchors {
-  display: flex;
-  justify-content: center;
-}
-
 .anchors__list:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 450px) {
+  .anchors {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+  }
+  .anchors__list:nth-child(n + 4) {
+    margin-top: 15px;
+  }
 }
 
 .anchors__button {
@@ -1378,11 +1434,16 @@ summary {
   cursor: pointer;
 }
 
+@media screen and (min-width: 450px) {
+  .anchors {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 /** @format */
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .portfolio__item {
@@ -1430,6 +1491,12 @@ summary {
   color: #757575;
 }
 
+@media screen and (max-width: 450px) {
+  .portfolio__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 .portfolio__list {
   background: #fff;
 }
@@ -1439,19 +1506,45 @@ summary {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio__list:nth-child(3n + 2) {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.portfolio__listt:nth-child(-n + 6) {
-  margin-bottom: 30px;
-}
-
 .portfolio__list:hover .portfolio__hover {
   transform: translateY(-100%);
   opacity: 1;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 450px) and (max-width: 1199px) {
+  .portfolio {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio__list {
+    width: 354px;
+  }
+  .portfolio__list:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .portfolio__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio__description--padding {
+    padding-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio__list:nth-child(3n + 2) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .portfolio__list:nth-child(-n + 6) {
+    margin-bottom: 30px;
+  }
 }
 
 /** @format */
@@ -1460,8 +1553,8 @@ summary {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 480px;
+  height: 100%;
   display: block;
   align-items: center;
   background-color: #fff;

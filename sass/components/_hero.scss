@@ -9,7 +9,14 @@
       $background-image,
       $background-image
     ),
-    url(../images/hero.jpg);
+    url(../images/hero-450x1.jpg);
+  // --------------
+  background-image: linear-gradient(
+      to right,
+      $background-image,
+      $background-image
+    ),
+    url(../images/hero-450x1.webp);
   background-size: cover;
   background-position: center;
 
@@ -50,30 +57,127 @@
     cursor: pointer;
   }
 }
-
-@media screen and (min-width: 450px) {
+//  -------MEdia x2 mobile
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero {
-    width: 1200px;
-    background: $grey-light;
     background-image: linear-gradient(
         to right,
         $background-image,
         $background-image
       ),
-      url(../images/hero.jpg);
-    background-size: cover;
-    background-position: center;
+      url(../images/hero-450x2.jpg);
+  }
+}
+// ------------------
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-450x2.webp);
+  }
+}
+
+// ----------Tablet---------------
+@media screen and (min-width: 450px) {
+  .hero {
+    width: 768px;
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-768x1.jpg);
+    // ---------------
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-768x1.webp);
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-768x2.jpg);
+  }
+}
+// ------------------
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-768x2.webp);
+  }
+}
+
+// ---------------Desktop------------------
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1200px;
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-1200x1.jpg);
+    // ---------------
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-1200x1.webp);
 
     &__title {
       width: 696px;
       font-size: 44px;
       line-height: 1.36;
     }
+  }
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-1200x2.jpg);
+  }
+}
+// ------------------
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        $background-image,
+        $background-image
+      ),
+      url(../images/hero-1200x2.webp);
   }
 }
