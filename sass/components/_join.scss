@@ -18,10 +18,11 @@
     fill: currentColor;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
     &__title {
       text-align: center;
-      padding-top: 60px;
     }
   }
 
@@ -50,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .join {
     margin-left: auto;
     &__title {

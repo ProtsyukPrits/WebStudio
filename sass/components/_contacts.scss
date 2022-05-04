@@ -6,7 +6,7 @@
     fill: currentColor;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 }
@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .contacts__list:not(:last-child) {
     margin-bottom: 10px;
   }

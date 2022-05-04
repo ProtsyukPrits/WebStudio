@@ -2,7 +2,6 @@
 
 .hero {
   margin: 0 auto;
-  width: 480px;
   background: $grey-light;
   background-image: linear-gradient(
       to right,
@@ -85,9 +84,8 @@
 }
 
 // ----------Tablet---------------
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 480px) {
   .hero {
-    width: 768px;
     background-image: linear-gradient(
         to right,
         $background-image,
@@ -101,6 +99,10 @@
         $background-image
       ),
       url(../images/hero-768x1.webp);
+
+    &__title {
+      width: 360px;
+    }
   }
 }
 
@@ -133,7 +135,6 @@
 // ---------------Desktop------------------
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1200px;
     background-image: linear-gradient(
         to right,
         $background-image,
@@ -152,6 +153,9 @@
       width: 696px;
       font-size: 44px;
       line-height: 1.36;
+    }
+    &__item {
+      padding: 200px 0px;
     }
   }
 }

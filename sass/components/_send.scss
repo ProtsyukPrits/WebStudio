@@ -47,7 +47,7 @@
     fill: currentColor;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 480px) {
     text-align: center;
     &__icon {
       bottom: 0;
@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .send {
     width: 768px;
     text-align: center;

@@ -4,8 +4,8 @@
   &__title {
     font-family: $primery-font-family;
     font-style: normal;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -21,7 +21,7 @@
     fill: currentColor;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 480px) {
     &__list:nth-child(2n + 1) {
       margin-right: 30px;
     }
@@ -54,7 +54,7 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .regular-customers {
     &__list:nth-child(3n + 2) {
       margin-right: 30px;
@@ -80,6 +80,10 @@
     }
     &__link {
       width: 170px;
+    }
+    &__title {
+      font-size: 36px;
+      line-height: 1.16;
     }
   }
 }

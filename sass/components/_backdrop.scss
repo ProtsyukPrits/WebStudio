@@ -74,14 +74,18 @@
   }
 }
 
-@media screen and (min-width: 450px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .backdrop {
     &__item {
-      width: 528px;
-      top: 70%;
+      width: 450px;
     }
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    &__item {
+      width: 528px;
+    }
+  }
 }

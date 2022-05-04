@@ -41,7 +41,15 @@ img {
 .our-work__title,
 .our-team__title,
 .regular-customers__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-work__title,
+  .our-team__title,
+  .regular-customers__title {
+    margin-bottom: 50px;
+  }
 }
 
 .our-work__list:not(:last-child) {
