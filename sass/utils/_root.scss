@@ -4,6 +4,9 @@ body {
   font-family: $primery-font-family, $secondary-font-family, sans-serif;
   color: $black;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 img {
   display: block;

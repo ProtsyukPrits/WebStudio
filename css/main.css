@@ -7,6 +7,10 @@ body {
   color: #000;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -1575,12 +1579,12 @@ summary {
   position: fixed;
   top: 0;
   left: 0;
-  width: 480px;
+  width: 100%;
   height: 100%;
-  display: block;
-  align-items: center;
   background-color: #fff;
   padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile__button {
@@ -1621,7 +1625,7 @@ summary {
 
 /** @format */
 .nav-mobile {
-  display: block;
+  margin-bottom: auto;
 }
 
 .nav-mobile__list {
@@ -1649,7 +1653,6 @@ summary {
 
 /** @format */
 .contacts-mobile {
-  padding-top: 302px;
   padding-bottom: 64px;
 }
 
