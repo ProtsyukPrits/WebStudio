@@ -340,7 +340,7 @@ summary {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -437,13 +437,13 @@ summary {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .nav {
     display: none;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .nav {
     margin-left: 88px;
   }
@@ -478,7 +478,7 @@ summary {
   fill: currentColor;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .contacts {
     display: none;
   }
@@ -501,7 +501,7 @@ summary {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__list:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -583,7 +583,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768x1.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-768x1.webp);
@@ -633,6 +633,10 @@ summary {
 }
 
 /** @format */
+.specifics__list:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .specifics__title {
   font-style: normal;
   font-size: 14px;
@@ -666,7 +670,7 @@ summary {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .specifics {
     width: 738px;
     display: flex;
@@ -714,7 +718,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 768px) {
   .our-work {
     padding-bottom: 94px;
   }
@@ -794,13 +798,13 @@ summary {
   color: #757575;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .our-team__list:not(:last-child) {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team__item {
     display: flex;
     flex-wrap: wrap;
@@ -884,7 +888,7 @@ summary {
   fill: currentColor;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .regular-customers__list:nth-child(2n + 1) {
     margin-right: 30px;
   }
@@ -912,7 +916,7 @@ summary {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .regular-customers__list:nth-child(3n + 2) {
     margin-right: 30px;
     margin-left: 30px;
@@ -976,7 +980,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__item {
     padding-left: 76px;
     padding-right: 89px;
@@ -1010,7 +1014,7 @@ summary {
   fill: currentColor;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .join {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1042,7 +1046,7 @@ summary {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .join {
     margin-left: auto;
   }
@@ -1104,7 +1108,7 @@ summary {
   fill: currentColor;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .send {
     text-align: center;
   }
@@ -1133,7 +1137,7 @@ summary {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .send {
     width: 768px;
     text-align: center;
@@ -1234,7 +1238,7 @@ summary {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .backdrop__item {
     width: 450px;
   }
@@ -1426,7 +1430,7 @@ summary {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .anchors {
     display: flex;
     flex-wrap: wrap;
@@ -1460,7 +1464,7 @@ summary {
   cursor: pointer;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .anchors {
     display: flex;
     justify-content: center;
@@ -1517,7 +1521,7 @@ summary {
   color: #757575;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .portfolio__list:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1538,7 +1542,7 @@ summary {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio {
     margin-top: 30px;
     display: flex;
@@ -1610,7 +1614,7 @@ summary {
   fill: currentColor;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mobile {
     display: none;
   }

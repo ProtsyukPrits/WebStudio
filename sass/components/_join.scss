@@ -18,7 +18,7 @@
     fill: currentColor;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     padding-top: 60px;
     padding-bottom: 60px;
     &__title {
@@ -51,7 +51,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .join {
     margin-left: auto;
     &__title {

@@ -4,7 +4,7 @@
     margin-right: 8px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     width: 480px;
@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .anchors {
     display: flex;
     justify-content: center;

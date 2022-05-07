@@ -1,6 +1,10 @@
 /** @format */
 
 .specifics {
+  &__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
   &__title {
     font-style: normal;
     font-size: 14px;
@@ -38,7 +42,7 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .specifics {
     width: 738px;
     display: flex;
